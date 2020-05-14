@@ -11,6 +11,20 @@ img {
   margin-bottom: 1.5em;
 }
 
+.lb-data .lb-details {
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.lb-data .lb-caption {
+  font-size: 1.05em;
+}
+
+.lb-data .lb-number {
+  margin-top: 1em;
+}
+
 #pic-search {
   margin-top: 1.5em;
   width: 50%;
@@ -20,11 +34,17 @@ img {
 }
 
 @media (min-width: 768px) {
+  .lb-data .lb-caption {
+    font-size: 1.25em;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 999px;
+  }
+  .lb-data .lb-caption {
+    font-size: 1.5em;
   }
 }
 
