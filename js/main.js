@@ -1,8 +1,9 @@
 $('#pic-search').keyup(function () {
-  var val = $.trim(this.value);
+  const val = $.trim(this.value);
   if (val === '') $('img').show();
   else {
     $('img').hide();
-    $('img[alt*=' + val + ']').show();
+    $('img[alt*=' + val.toLowerCase() + ']').show();
+    $('img[data-title*=' + val.toLowerCase() + ']').show();
   }
 });
