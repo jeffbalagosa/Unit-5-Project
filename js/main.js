@@ -1,6 +1,8 @@
-$('#pic-search').on('keyup', function () {
-  var value = $(this).val().toLowerCase();
-  $('#thumbnails *').filter(function () {
-    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-  });
+$('#pic-search').keyup(function () {
+  var val = $.trim(this.value);
+  if (val === '') $('img').show();
+  else {
+    $('img').hide();
+    $('img[alt*=' + val + ']').show();
+  }
 });
