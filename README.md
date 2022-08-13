@@ -1,4 +1,4 @@
-# Project: Fallout 4 Plot Generator
+# Project: Lightbox Photo Viewer
 
 ## Description:
 
